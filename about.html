@@ -5,38 +5,50 @@ header-img: "img/about-bg.jpg"
 ---
 
 <!-- Language Selector -->
-<div class="btn-group" role="group" aria-label="language selector" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
-    <button class="btn btn-default" type="button" value="0" selected>English</button>
-    <button class="btn btn-default" type="button" value="1">中文</button>
+<div class="btn-group" role="group" aria-label="language selector">
+    <button class="btn btn-default" type="button" id="bt1" style="font-family: Arial;">English</button>
+    <button class="btn btn-default" type="button" id="bt2" style="font-family: Arial;">中文</button>
 </div>
 
 <!-- Chinese Version -->
 <div class="zh post-container">
 
+<div style="height:20px;"></div>
 </div>
 
 <!-- English Version -->
-<div class="en post-container" style="font-family: Times New Roman;">
-<h1 align="center">Junxia Zhuge</h1>
-<h2>Education Experience</h2>
+<div class="en post-container">
+<h1 align="center" style="font-family: Times New Roman;">Junxia Zhuge</h1>
+<h2 style="font-family: Times New Roman;">Education Experience</h2>
 
-<h2>Work Experience</h2>
+<h2 style="font-family: Times New Roman;">Work Experience</h2>
 
-<h2>Skill</h2>
+<h2 style="font-family: Times New Roman;">Skill</h2>
+<div style="height:20px;"></div>
 </div>
 
 <!-- Handle Language Change -->
 <script type="text/javascript">
-    var $zh = document.querySelector(".zh");
-    var $en = document.querySelector(".en");
-    function onLanChange(index){
-        if(index == 1){
+    function english(){
+        if(n == "zh"){
             $zh.style.display = "block";
             $en.style.display = "none";
-        }else{
-            $en.style.display = "block";
-            $zh.style.display = "none";
+            n = "en";
         }
     }
-    onLanChange(0);
+    function chinese(){
+        if(n == "en"){
+            $en.style.display = "block";
+            $zh.style.display = "none";
+            n = "zh";            
+        }
+    }
+    var b1 = document.getElementById("bt1");
+    var b2 = document.getElementById("bt2");
+    b1.addEventListener("click", english);
+    b2.addEventListener("click", chinese);
+    var $zh = document.querySelector(".zh");
+    var $en = document.querySelector(".en");
+    var n = "en";
+    english();
 </script>
