@@ -722,6 +722,7 @@ body {
   margin-bottom: -5px;
 }
 .tags a,
+.tags span,
 .tags .tag {
   display: inline-block;
   border: 1px solid rgba(255, 255, 255, 0.8);
