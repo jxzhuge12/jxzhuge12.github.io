@@ -5,10 +5,10 @@ header-img: "img/about-bg.jpg"
 ---
 
 <!-- Language Selector -->
-<select onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
-    <option value="0" selected>English</option>
-    <option value="1">中文</option>
-</select>
+<div class="btn-group" role="group" aria-label="language selector" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
+    <button class="btn btn-default" type="button" value="0" selected>English</button>
+    <button class="btn btn-default" type="button" value="1">中文</button>
+</div>
 
 <!-- Chinese Version -->
 <div class="zh post-container">
