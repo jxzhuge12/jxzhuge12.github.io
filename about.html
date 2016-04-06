@@ -30,25 +30,25 @@ header-img: "img/about-bg.jpg"
 <!-- Handle Language Change -->
 <script type="text/javascript">
     function english(){
-        if(n == "zh"){
-            $zh.style.display = "block";
-            $en.style.display = "none";
-            n = "en";
+        if($n == "zh"){
+            $zh.style.display = "none";
+            $en.style.display = "block";
+            $n = "en";
         }
     }
     function chinese(){
-        if(n == "en"){
-            $en.style.display = "block";
-            $zh.style.display = "none";
-            n = "zh";            
+        if($n == "en"){
+            $en.style.display = "none";
+            $zh.style.display = "block";
+            $n = "zh";            
         }
     }
-    var b1 = document.getElementById("bt1");
-    var b2 = document.getElementById("bt2");
-    b1.addEventListener("click", english);
-    b2.addEventListener("click", chinese);
+    var $b1 = document.getElementById("bt1");
+    var $b2 = document.getElementById("bt2");
+    $b1.addEventListener("click", english);
+    $b2.addEventListener("click", chinese);
     var $zh = document.querySelector(".zh");
     var $en = document.querySelector(".en");
-    var n = "en";
+    var $n = "zh";
     english();
 </script>
