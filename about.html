@@ -4,26 +4,14 @@ layout: page
 header-img: "img/about-bg.jpg"
 ---
 
-<!-- Language Selector -->
-<div style="height:20px;"></div>
-<div class="btn-group" role="group" aria-label="language selector">
-    <button class="btn btn-default" type="button" id="bt1" style="font-family: Arial;" checked="checked">English</button>
-    <button class="btn btn-default" type="button" id="bt2" style="font-family: Arial;">中文</button>
-</div>
-
-<!-- Chinese Version -->
-<div class="zh post-container">
-
-<div style="height:20px;"></div>
-</div>
-
 <!-- English Version -->
 <div class="en post-container">
 <p style="font-family: Times New Roman;" align="justify">
-I majored in Math & Applied Math during undergraduate study. 
+I majored in Math & Applied Math during my undergraduate study. 
 After graduate from Zhejiang University, I spent 3 months as a research intern at Microsoft Research Asia.
 My primary work at MSRA is computer game video compressing based on APIs.
 Now, I am a graduate student from UCSanDiego major in Computer Science.
+This summer, I will be an engineer intern at Snapchat.
 </p>
 </div>
 
@@ -34,30 +22,3 @@ Now, I am a graduate student from UCSanDiego major in Computer Science.
 <span class="badge">Matlab</span>
 <span class="badge">DirectX</span>
 <span class="badge">Latex</span>
-<div style="height:20px;"></div>
-
-<!-- Handle Language Change -->
-<script type="text/javascript">
-    function english(){
-        if($n == "zh"){
-            $zh.style.display = "none";
-            $en.style.display = "block";
-            $n = "en";
-        }
-    }
-    function chinese(){
-        if($n == "en"){
-            $en.style.display = "none";
-            $zh.style.display = "block";
-            $n = "zh";            
-        }
-    }
-    var $b1 = document.getElementById("bt1");
-    var $b2 = document.getElementById("bt2");
-    $b1.addEventListener("click", english);
-    $b2.addEventListener("click", chinese);
-    var $zh = document.querySelector(".zh");
-    var $en = document.querySelector(".en");
-    var $n = "zh";
-    english();
-</script>
