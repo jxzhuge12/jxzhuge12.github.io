@@ -44,9 +44,7 @@ In the future, we'd like to improve the near-sighted's browsing experience, even
 
 ## Built With
 <div class="tags">
-<a class="tag" href="" title="HTML5">HTML5</a>
-<a class="tag">HTML5</a>
-<span class="tag">HTML5</span>
+<a class="tag" style="border-color: black; color: black;">HTML5</a>
 <span class="badge">HTML5</span>
 <span class="badge">CSS3</span>
 <span class="badge">JavaScript</span>
