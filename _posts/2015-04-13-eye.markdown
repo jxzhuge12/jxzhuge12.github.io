@@ -49,11 +49,17 @@ In the future, we'd like to improve the near-sighted's browsing experience, even
 
 ## Try it out
 <a target="_blank" href="https://chrome.google.com/webstore/detail/eye/epoebkjflhhidcopbenmmilgopgppcfg?hl=en-US">
-        <i class="fa fa-chrome"></i>
+    <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-chrome fa-stack-1x fa-inverse"></i>
+    </span>
 </a>[chrome web store](https://chrome.google.com/webstore/detail/eye/epoebkjflhhidcopbenmmilgopgppcfg?hl=en-US)
 
 <a target="_blank" href="https://github.com/idf/eye">
-        <i class="fa fa-github"></i>
+    <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+    </span>
 </a>[source code](https://github.com/idf/eye)
 
 ## collaborator
