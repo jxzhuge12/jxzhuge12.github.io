@@ -6,6 +6,7 @@ date:       2015-10-3 12:00:00
 author:     "jxzhuge12"
 catalog:    true
 tags:
+    - Projects
     - Chrome Extension
 ---
 
@@ -42,6 +43,9 @@ In the future, we'd like to improve the near-sighted's browsing experience, even
 
 
 ## Built With
+<a class="tag" href="" title="HTML5">HTML5</a>
+<a class="tag">HTML5</a>
+<span class="tag">HTML5</span>
 <span class="badge">HTML5</span>
 <span class="badge">CSS3</span>
 <span class="badge">JavaScript</span>
