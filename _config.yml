@@ -6,7 +6,7 @@ email: jxzhuge12@gmail.com
 description: "Hey, it's me."
 keyword: "Math, Computer Science"
 url: "http://jxzhuge12.github.io"              # your host, for absolute URL
-# baseurl: "/huxblog-boilerplate"         # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: "/"         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
