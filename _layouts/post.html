@@ -2,19 +2,18 @@
 layout: default
 ---
 
-<!-- Image to hack wechat -->
-<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
-<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
 <!-- Latex Support -->
 {% if page.latex == "true" %}
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 {% endif %}
+
 <!-- Post Header -->
 <style type="text/css">
     header.intro-header{
         background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')
     }
 </style>
+
 <header class="intro-header" >
     <div class="container">
         <div class="row">
@@ -26,13 +25,8 @@ layout: default
                         {% endfor %}
                     </div>
                     <h1>{{ page.title }}</h1>
-                    {% comment %}
-                        always create a h2 for keeping the margin , Hux
-                    {% endcomment %}
-                    {% comment %} if page.subtitle {% endcomment %}
                     <h2 class="subheading">{{ page.subtitle }}</h2>
-                    {% comment %} endif {% endcomment %}
-                    <span class="meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
+                    <span class="meta">{{ page.date | date: "%B %-d, %Y" }}</span>
                 </div>
             </div>
         </div>
