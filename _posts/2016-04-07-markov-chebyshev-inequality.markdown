@@ -46,7 +46,11 @@ $$E(X)\geq\epsilon E(I(X\geq\epsilon))=\epsilon P(X\geq\epsilon)$$
 
 #### Proof for Chebyshev's Inequality
 
-From Markov's inequality, we define $$Y=|X-E(X)|^2$$, then
+From Markov's inequality, we define
+
+> $$Y=|X-E(X)|^2$$
+
+Then
 
 $$P[Y\geq \epsilon^2]\leq\frac{E(Y)}{\epsilon^2}=\frac{var(X)}{\epsilon^2}$$
 
