@@ -17,7 +17,14 @@ latex:      true
 
 ---
 
-#### Chebyshev's Inequality
+#### Markov's Inequality
 
 > If $X$ is a nonnegative random variable and $\epsilon>0$. Then
-$$P[x\geq\epsilon]\leq\frac{E(X)}{\epsilon}$$
+>
+> $$P[x\geq\epsilon]\leq\frac{E(X)}{\epsilon}$$
+
+#### Chebyshev's Inequality
+
+> Let $X$ be a random variable with finite expected value and finite non-zero variance. Then for any real number $\epsilon>0$:
+>
+> $$P[|X-E(X)|\geq\epsilon]\leq\frac{var(X)}{\epsilon^2}$$
