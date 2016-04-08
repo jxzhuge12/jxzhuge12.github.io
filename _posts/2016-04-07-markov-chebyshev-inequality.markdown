@@ -32,6 +32,7 @@ There are 5 critical inequalities in Machine Learning Theory:
 #### Proof for Markov's Inequality
 
 First of all, we define **indicator function**:
+
 > For an event $A$, let $I(A)$ be the indicator of the event:
 >
 > $$y = \left\{ \begin{array}{ll}
