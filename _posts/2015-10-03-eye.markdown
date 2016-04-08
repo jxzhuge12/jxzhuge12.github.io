@@ -11,11 +11,11 @@ tags:
     - Chrome Extension
 ---
 
-## Inspiration
+### Inspiration
 
 According to the references, there are nearly 6% people suffering from color-blindness nowadays. What's more, it is obvious that teenagers in an increasing number are getting near-sighted. The health of eyes is becoming a more and more serious issue in our daily lives. However, the design of many websites is not completely friendly to these people. Our main purpose is to further improve their browsing experience. Meanwhile, the users can also raise their consciousness of caring the color-blindness and preventing the near-sight by trying directly through our project.
 
-## What it does
+### What it does
 
 Our project has the following functions:
 
@@ -23,28 +23,28 @@ Our project has the following functions:
 * Supply near-sight experiences with diopters ranging from 0 to 10 
 * Adjust the color of the web sites for the color-blind to distinguish the elements
 
-## How I built it
+### How I built it
 
 We mainly use the techniques of HTML5, CSS3 and JavaScript to build a Chrome extension.
 
-## Challenges I ran into
+### Challenges I ran into
 
 We have some difficulties when figuring out the principle and the cause of the color-blindness. This is critical to the implementation of the third function of our project.
 
-## Accomplishments that I'm proud of
+### Accomplishments that I'm proud of
 
 We feel proud to devoting ourselves to assisting the color-blind to enhance the browsing experience.
 
-## What I learned
+### What I learned
 
 Of course, we learned and became more familiar with the techniques we used in this project. The most important point is that, this project gave us a chance to understand the color-blind's lives. As a future engineer/scientist, We are encouraged to make people's life more convenient, comfortable and efficient with what we mastered. 
 
-## What's next for Eye
+### What's next for Eye
 
 In the future, we'd like to improve the near-sighted's browsing experience, even when they're not wearing glasses. Furthermore, we also aim to provide the blind with an interface to the Internet. 
 
 
-## Built With
+### Built With
 <div class="tags">
 <a class="tag" style="border-color: black; color: black;">HTML5</a>
 <a class="tag" style="border-color: black; color: black;">CSS3</a>
@@ -52,7 +52,7 @@ In the future, we'd like to improve the near-sighted's browsing experience, even
 <a class="tag" style="border-color: black; color: black;">Matlab</a>
 </div>
 
-## Try it out
+### Try it out
 <a target="_blank" href="https://chrome.google.com/webstore/detail/eye/epoebkjflhhidcopbenmmilgopgppcfg?hl=en-US">
     <span class="fa-stack fa-lg">
         <i class="fa fa-circle fa-stack-2x"></i>
@@ -67,7 +67,7 @@ In the future, we'd like to improve the near-sighted's browsing experience, even
     </span>
 </a>[source code](https://github.com/idf/eye)
 
-## collaborator
+### collaborator
 <div class="tags">
 <a class="tag" href="https://github.com/idf" style="border-color: black; color: black;">Danyang Zhang</a>
 <a class="tag" href="https://github.com/wangqian1992511" style="border-color: black; color: black;">Qian Wang</a>
