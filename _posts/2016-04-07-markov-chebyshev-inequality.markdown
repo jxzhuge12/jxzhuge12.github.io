@@ -9,8 +9,8 @@ latex:      true
 
 There are 5 critical inequalities in Machine Learning Theory:
 
-* [Markov's Inequality]({{ page.url }})
-* [Chebyshev's Inequality]({{ page.url }})
+* [Markov's Inequality]({{ page.url | "/#markovs-inequality" }})
+* [Chebyshev's Inequality]({{ page.url | "/#chebyshevs-inequality" }})
 * Chernoff Hoeffding Bounding
 * Hoeffding's Inequality
 * McDiarmid's Inequality
