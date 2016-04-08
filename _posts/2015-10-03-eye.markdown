@@ -5,6 +5,7 @@ subtitle:   "Try color-blind and near-sight, improve the color-blind's browsing 
 date:       2015-10-3 12:00:00
 author:     "jxzhuge12"
 catalog:    true
+latex:      false
 tags:
     - Projects
     - Chrome Extension
