@@ -1,13 +1,15 @@
 ---
 layout:     post
-title:      "Machine Learning Theory - Markov's Inequality and Chebyshev's Inequality"
+title:      "Machine Learning Theory - 5 Important Inequalities"
 date:       2016-04-07 12:00:00
 author:     "jxzhuge12"
 catalog:    true
 latex:      true
+tags:
+    - Machine Learning
 ---
 
-There are 5 critical inequalities in Machine Learning Theory:
+There are 5 important inequalities in Machine Learning Theory:
 
 * [Markov's Inequality]({{ page.url }}/#markovs-inequality)
 * [Chebyshev's Inequality]({{ page.url }}/#chebyshevs-inequality)
