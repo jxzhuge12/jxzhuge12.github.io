@@ -880,9 +880,11 @@ body {
 }
 /* Hux Optimize UserExperience */
 .navbar-default .navbar-toggle:focus,
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:active {
+.navbar-default .navbar-toggle:hover {
   background-color: inherit;
+}
+.navbar-default .navbar-toggle:active {
+  background-color: rgba(255, 255, 255, 0.25);
 }
 /* Hux customize Style for navBar button */
 .navbar-default .navbar-toggle {
