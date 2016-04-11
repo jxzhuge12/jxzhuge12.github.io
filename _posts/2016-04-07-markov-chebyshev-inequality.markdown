@@ -44,13 +44,13 @@ $$E(X)\geq\epsilon E(I(X\geq\epsilon))=\epsilon P(X\geq\epsilon)$$
 
 > Let $X$ be a random variable with finite expected value and finite non-zero variance. Then for any real number $\epsilon>0$:
 >
-> $$P[|X-E(X)|\geq\epsilon]\leq\frac{var(X)}{\epsilon^2}$$
+> $$P[\vert X-E(X)\vert\geq\epsilon]\leq\frac{var(X)}{\epsilon^2}$$
 
 #### Proof for Chebyshev's Inequality
 
 From Markov's inequality, we define
 
-`$$Y=|X-E(X)|^2$$`
+`$$Y=\vert X-E(X)\vert^2$$`
 
 Then
 
@@ -73,7 +73,7 @@ _The following theorem is a **special case** of chernoff bound_
 >
 > We have
 >
-> $$P(|\bar{X}-p|>\epsilon)\leq 2e^{-2\epsilon^2m}$$
+> $$P(\vert\bar{X}-p\vert>\epsilon)\leq 2e^{-2\epsilon^2m}$$
 
 #### Moment-Generating Functions (MGFs)
 
@@ -83,8 +83,8 @@ _The following theorem is a **special case** of chernoff bound_
 
 MGF has some important properties:
 
-1. If $M_X(t)$ is defined for \\$t\in(-t^*,t^*)$ for some $t^*>0$, then
-    * All the moments of $X$ exist, and \\$M_X(t)$ has derivatives of all orders at $t=0$ where $\forall k, E[X^k]=\frac{\partial^kM}{\partial t^k}|_{t=0}$
+1. If $M_X(t)$ is defined for $t\in(-t^*,t^*)$ for some $t^*>0$, then
+    * All the moments of $X$ exist, and $M_X(t)$ has derivatives of all orders at $t=0$ where $\forall k, E[X^k]=\frac{\partial^kM}{\partial t^k}\vert_{t=0}$
 
 ## Hoeffding's Inequality
 
@@ -98,15 +98,15 @@ MGF has some important properties:
 >
 > For any $\epsilon>0$, we have
 >
-> $$P(|\bar{X}-E[\bar{X}]|>\epsilon)\leq exp(-\frac{2\epsilon^2m^2}{\sum_i(a_i-b_i)^2})$$
+> $$P(\vert\bar{X}-E[\bar{X}]\vert>\epsilon)\leq exp(-\frac{2\epsilon^2m^2}{\sum_i(a_i-b_i)^2})$$
 >
-> $$P(|\bar{X}-E[\bar{X}]|<-\epsilon)\leq exp(-\frac{2\epsilon^2m^2}{\sum_i(a_i-b_i)^2})$$
+> $$P(\vert\bar{X}-E[\bar{X}]\vert<-\epsilon)\leq exp(-\frac{2\epsilon^2m^2}{\sum_i(a_i-b_i)^2})$$
 
 ## McDiarmid's Inequality
 
 > Let $f:\mathbb{R}^m\rightarrow\mathbb{R}$ be such that $\forall i$, and all $x_1, \cdots, x_i, \cdots, x_m, X'_i$
 >
-> $$|f(x_1, \cdots, x_i, \cdots, x_m)-f(x_1, \cdots, X'_i, \cdots, x_m)|\leq\Delta_i$$
+> $$\vertf(x_1, \cdots, x_i, \cdots, x_m)-f(x_1, \cdots, X'_i, \cdots, x_m)\vert\leq\Delta_i$$
 >
 > Let $x_1, \cdots, x_m$ be independent random variables, then
 >
