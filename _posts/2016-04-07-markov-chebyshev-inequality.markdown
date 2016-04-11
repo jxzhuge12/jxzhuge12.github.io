@@ -64,28 +64,43 @@ _The previous two inequalities are easy to understand compared with the followin
 _The following theorem is a **special case** of chernoff bound_
 
 > Let $x_1, \cdots, x_m$ be i.i.d. Bernoulli random variables, where for every $i$:
+>
 > $$P(x_i=1)=p_i, P(x_i=0)=1-p_i$$
+>
 > Let
+>
 > $$\bar{x}=\frac{1}{m}\sum_{i=1}^mx_i, p=\frac{1}{m}\sum_{i=1}^mp_i$$
+>
 > We have
+>
 > $$P(|\bar{x}-p|>\epsilon)\leq 2e^{-2\epsilon^2m}$$
 
 ## Hoeffding's Inequality
 
 > Let $x_1, \cdots, x_m$ be independent random variables, where for every $i$:
+>
 > $$a_i\leq x_i\leq b_i$$
+>
 > Let
+>
 > $$\bar{x}=\frac{1}{m}\sum_{i=1}^mx_i$$
+>
 > For any $\epsilon>0$, we have
+>
 > $$P(|\bar{x}-E[\bar{x}]|>\epsilon)\leq e^{\frac{-2\epsilon^2m^2}{\sum_i(a_i-b_i)^2}}$$
+>
 > $$P(|\bar{x}-E[\bar{x}]|<-\epsilon)\leq e^{\frac{-2\epsilon^2m^2}{\sum_i(a_i-b_i)^2}}$$
 
 ## McDiarmid's Inequality
 
 > Let $f:\mathbb{R}^m\rightarrow\mathbb{R}$ be such that $\forall i$, and all $x_1, \cdots, x_i, \cdots, x_m, x'_i$
+>
 > $$|f(x_1, \cdots, x_i, \cdots, x_m)-f(x_1, \cdots, x'_i, \cdots, x_m)|\leq\Delta_i$$
+>
 > Let $x_1, \cdots, x_m$ be independent random variables, then
+>
 > $$P[f(x_1, \cdots, x_m)-E[f(x_1, \cdots, x_m)]>\epsilon]\leq e^{\frac{-2\epsilon^2}{\sum_i\Delta_i^2}}$$
+>
 > $$P[f(x_1, \cdots, x_m)-E[f(x_1, \cdots, x_m)]<-\epsilon]\leq e^{\frac{-2\epsilon^2}{\sum_i\Delta_i^2}}$$
 
 #### Thanks
