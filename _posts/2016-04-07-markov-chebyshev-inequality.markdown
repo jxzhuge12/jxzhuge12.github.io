@@ -95,6 +95,32 @@ MGF has some important properties:
 >
 > $$f(E[X])\leq E[f(X)]$$
 
+#### Proof for Chernoff-Hoeffding Bound
+
+Define $y_i=x_i-p_i$, $\bar{y}=\frac{1}{m}\sum_{i=1}^my_i$. We need to show $P(\vert\bar{y}\vert>\epsilon)\leq2e^{-2\epsilon^2m}$
+
+Conseder each of $P(\bar{y}>\epsilon)$ and $P(\bar{y}<\epsilon)$
+
+For $t>0$, look at 
+
+$$P(\bar{y}>\epsilon)=P(e^{t\bar{y}}>e^{t\epsilon})\leq\frac{E[e^{t\bar{y}}]}{e^{t\epsilon}}=\frac{M_{\bar{y}}(t)}{e^{t\epsilon}}$$
+
+> Lemma 1: For all $t>0$, $M_{y_i}(t)\leq e^{t^2/8}$
+> > Proof: Recall  $$y_i = \left\{ \begin{array}{ll}
+1-p_i & x_i=1\\
+-p_i & x_i=0
+\end{array} \right.$$
+> > \begin{align*}
+M_{y_i}(t)&=E[e^{ty_i}]\\
+&=p_ie^{t(1-p_i)}+(1-p_i)e^{-tp_i}\\
+&=e^{-tp_i}(p_ie^t+(1-p_i))\\
+&=exp(-tp_i+ln(p_ie^t+(1-p_i)))
+\end{align*}
+
+
+
+
+
 ## Hoeffding's Inequality
 
 > Let $x_1, \cdots, x_m$ be independent random variables, where for every $i$:
@@ -115,7 +141,7 @@ MGF has some important properties:
 
 > Let $f:\mathbb{R}^m\rightarrow\mathbb{R}$ be such that $\forall i$, and all $x_1, \cdots, x_i, \cdots, x_m, X'_i$
 >
-> $$\vertf(x_1, \cdots, x_i, \cdots, x_m)-f(x_1, \cdots, X'_i, \cdots, x_m)\vert\leq\Delta_i$$
+> $$\vert f(x_1, \cdots, x_i, \cdots, x_m)-f(x_1, \cdots, X'_i, \cdots, x_m)\vert\leq\Delta_i$$
 >
 > Let $x_1, \cdots, x_m$ be independent random variables, then
 >
