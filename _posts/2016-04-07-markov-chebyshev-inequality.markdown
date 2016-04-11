@@ -106,6 +106,7 @@ For $t>0$, look at
 $$P(\bar{y}>\epsilon)=P(e^{t\bar{y}}>e^{t\epsilon})\leq\frac{E[e^{t\bar{y}}]}{e^{t\epsilon}}=\frac{M_{\bar{y}}(t)}{e^{t\epsilon}}$$
 
 > Lemma 1: For all $t>0$, $M_{y_i}(t)\leq e^{t^2/8}$
+> 
 > > Proof: Recall  $$y_i = \left\{ \begin{array}{ll}
 1-p_i & x_i=1\\
 -p_i & x_i=0
@@ -116,7 +117,9 @@ M_{y_i}(t)&=E[e^{ty_i}]\\
 &=e^{-tp_i}(p_ie^t+(1-p_i))\\
 &=exp(-tp_i+ln(p_ie^t+(1-p_i)))
 \end{align*}
-
+> > Look at $g(t)=-tp_i+ln(p_ie^t+(1-p_i))$, $g(t)=g(0)+g'(0)t+g''(t^\ast)\frac{t^2}{2}$ for some $t^\ast\in[0,t]$. 
+> > We can show $g''(t)\leq\frac{1}{4},\forall t^\ast$.
+> > Thus $g(t)\leq\frac{t^2}{8}$
 
 
 
