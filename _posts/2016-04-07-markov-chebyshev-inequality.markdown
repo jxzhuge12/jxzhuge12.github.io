@@ -112,12 +112,13 @@ $$P(\bar{y}>\epsilon)=P(e^{t\bar{y}}>e^{t\epsilon})\leq\frac{E[e^{t\bar{y}}]}{e^
 -p_i & x_i=0
 \end{array} \right.$$
 > > 
-> > \begin{align*}
-M_{y_i}(t)&=E[e^{ty_i}]\\\\
-&=p_ie^{t(1-p_i)}+(1-p_i)e^{-tp_i}\\\\
-&=e^{-tp_i}(p_ie^t+(1-p_i))\\\\
-&=exp(-tp_i+ln(p_ie^t+(1-p_i)))
-\end{align*}
+> > M_{y_i}(t)&=E[e^{ty_i}]
+> > 
+> > =p_ie^{t(1-p_i)}+(1-p_i)e^{-tp_i}
+> > 
+> > =e^{-tp_i}(p_ie^t+(1-p_i))
+> >
+> > =exp(-tp_i+ln(p_ie^t+(1-p_i)))
 > > 
 > > Look at $g(t)=-tp_i+ln(p_ie^t+(1-p_i))$
 > > 
