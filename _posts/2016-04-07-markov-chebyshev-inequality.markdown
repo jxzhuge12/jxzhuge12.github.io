@@ -132,11 +132,15 @@ Using properties of MGFs, $M_{\bar{y}}(t)=\prod_{i=1}^mM_{y_i}(\frac{t}{m})$
 
 Using Lemma 1, $M_{\bar{y}}(t)\leq\prod_{i=1}^mexp(\frac{t^2}{8m^2})=exp(\frac{t^2}{8m})$
 
-$$P(\bar{y}>\epsilon)\leq\frac{M_{\bar{y}}(t)}{e^{t\epsilon}}\leq\frac{exp(\frac{t^2}{8m})}{e^{t\epsilon}=exp(-(t\epsilon)-\frac{t^2}{8m})$$
+$$P(\bar{y}>\epsilon)\leq\frac{M_{\bar{y}}(t)}{e^{t\epsilon}}$$
+
+$$\leq\frac{exp(\frac{t^2}{8m})}{e^{t\epsilon}$$
+
+$$=exp(-(t\epsilon)-\frac{t^2}{8m})$$
 
 Pick $t$ that maximizes the $P(\bar{y}>\epsilon)$
 
-$$t=4m\epsilon\Rightarrow P(\bar{y}>\epsilon)\leqe^{-2m\epsilon^2}$$
+$$t=4m\epsilon\Rightarrow P(\bar{y}>\epsilon)\leq e^{-2m\epsilon^2}$$
 
 The other direction is the same.
 
