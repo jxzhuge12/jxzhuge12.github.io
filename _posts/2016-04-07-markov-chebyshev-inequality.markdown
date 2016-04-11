@@ -113,15 +113,19 @@ $$P(\bar{y}>\epsilon)=P(e^{t\bar{y}}>e^{t\epsilon})\leq\frac{E[e^{t\bar{y}}]}{e^
 \end{array} \right.$$
 > > 
 > > \begin{align*}
-M_{y_i}(t)&=E[e^{ty_i}]\\
-&=p_ie^{t(1-p_i)}+(1-p_i)e^{-tp_i}\\
-&=e^{-tp_i}(p_ie^t+(1-p_i))\\
+M_{y_i}(t)&=E[e^{ty_i}]\\\\
+&=p_ie^{t(1-p_i)}+(1-p_i)e^{-tp_i}\\\\
+&=e^{-tp_i}(p_ie^t+(1-p_i))\\\\
 &=exp(-tp_i+ln(p_ie^t+(1-p_i)))
 \end{align*}
 > > 
-> > Look at $g(t)=-tp_i+ln(p_ie^t+(1-p_i))$, $g(t)=g(0)+g'(0)t+g''(t^\ast)\frac{t^2}{2}$ for some $t^\ast\in[0,t]$. 
+> > Look at $g(t)=-tp_i+ln(p_ie^t+(1-p_i))$
 > > 
-> > We can show $g''(t)\leq\frac{1}{4},\forall t^\ast$.
+> > $$g(t)=g(0)+g'(0)t+g^{\prime\prime}(t^\ast)\frac{t^2}{2}$$ 
+> >
+> >for some $t^\ast\in[0,t]$. 
+> > 
+> > We can show $g^{\prime\prime}(t)\leq\frac{1}{4}$, $\forall t^\ast$.
 > > 
 > > Thus $g(t)\leq\frac{t^2}{8}$
 
