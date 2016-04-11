@@ -164,7 +164,7 @@ The other direction is the same.
 
 > Lemma 2 (Hoeffding's Lemma): Let $X\in[a,b]$ and $E[X]=0$. Then 
 >
-> $$M_X(t)=E[e^{tX}]\leqe^{t^2(b-a)^2/8}$$
+> $$M_X(t)=E[e^{tX}]\leq e^{t^2(b-a)^2/8}$$
 
 ## McDiarmid's Inequality
 
