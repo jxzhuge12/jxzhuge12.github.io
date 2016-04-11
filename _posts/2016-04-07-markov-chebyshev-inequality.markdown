@@ -134,7 +134,7 @@ Using Lemma 1, $M_{\bar{y}}(t)\leq\prod_{i=1}^mexp(\frac{t^2}{8m^2})=exp(\frac{t
 
 $$P(\bar{y}>\epsilon)\leq\frac{M_{\bar{y}}(t)}{e^{t\epsilon}}$$
 
-$$\leq\frac{exp(\frac{t^2}{8m})}{e^{t\epsilon}$$
+$$\leq\frac{exp(\frac{t^2}{8m})}{e^{t\epsilon}}$$
 
 $$=exp(-(t\epsilon)-\frac{t^2}{8m})$$
 
