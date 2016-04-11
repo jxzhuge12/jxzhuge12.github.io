@@ -160,6 +160,12 @@ The other direction is the same.
 >
 > $$P(\vert\bar{X}-E[\bar{X}]\vert<-\epsilon)\leq exp(-\frac{2\epsilon^2m^2}{\sum_i(a_i-b_i)^2})$$
 
+#### Proof for Hoeffding's Inequality
+
+> Lemma 2 (Hoeffding's Lemma): Let $X\in[a,b]$ and $E[X]=0$. Then 
+>
+> $$M_X(t)=E[e^{tX}]\leqe^{t^2(b-a)^2/8}$$
+
 ## McDiarmid's Inequality
 
 > Let $f:\mathbb{R}^m\rightarrow\mathbb{R}$ be such that $\forall i$, and all $x_1, \cdots, x_i, \cdots, x_m, X'_i$
@@ -171,6 +177,10 @@ The other direction is the same.
 > $$P[f(x_1, \cdots, x_m)-E[f(x_1, \cdots, x_m)]>\epsilon]\leq exp(-\frac{2\epsilon^2}{\sum_i\Delta_i^2})$$
 >
 > $$P[f(x_1, \cdots, x_m)-E[f(x_1, \cdots, x_m)]<-\epsilon]\leq exp(-\frac{2\epsilon^2}{\sum_i\Delta_i^2})$$
+
+_Note: Hoeffding's inequality is a **special case** of McDiarmid's inequality: just set_
+
+$$f(x_1, \cdots, x_m)=\sum_ix_i$$
 
 #### Thanks
 
