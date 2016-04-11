@@ -123,7 +123,7 @@ M_{y_i}(t)&=E[e^{ty_i}]\\\\
 > > 
 > > $$g(t)=g(0)+g'(0)t+g^{\prime\prime}(t^\ast)\frac{t^2}{2}$$ 
 > >
-> >for some $t^\ast\in[0,t]$. 
+> > for some $t^\ast\in[0,t]$. 
 > > 
 > > We can show $g^{\prime\prime}(t)\leq\frac{1}{4}$, $\forall t^\ast$.
 > > 
