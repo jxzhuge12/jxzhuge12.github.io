@@ -107,26 +107,26 @@ $$P(\bar{y}>\epsilon)=P(e^{t\bar{y}}>e^{t\epsilon})\leq\frac{E[e^{t\bar{y}}]}{e^
 
 > Lemma 1: For all $t>0$, $M_{y_i}(t)\leq e^{t^2/8}$
 > 
-> > Proof: Recall  $$y_i = \left\{ \begin{array}{ll}
+> Proof: Recall  $$y_i = \left\{ \begin{array}{ll}
 1-p_i & x_i=1\\
 -p_i & x_i=0
 \end{array} \right.$$
-> > 
-> > $$M_{y_i}(t)=E[e^{ty_i}]$$
-> > 
-> > $$=p_ie^{t(1-p_i)}+(1-p_i)e^{-tp_i}$$
-> > 
-> > $$=e^{-tp_i}(p_ie^t+(1-p_i))$$
+> 
+> $$M_{y_i}(t)=E[e^{ty_i}]$$
+> 
+> $$=p_ie^{t(1-p_i)}+(1-p_i)e^{-tp_i}$$
+> 
+> $$=e^{-tp_i}(p_ie^t+(1-p_i))$$
 > >
-> > $$=exp(-tp_i+ln(p_ie^t+(1-p_i)))$$
-> > 
-> > Look at $g(t)=-tp_i+ln(p_ie^t+(1-p_i))$, for some $t^\ast\in[0,t]$
-> > 
-> > $$g(t)=g(0)+g'(0)t+g^{\prime\prime}(t^\ast)\frac{t^2}{2}$$ 
-> > 
-> > We can show $g^{\prime\prime}(t)\leq\frac{1}{4}$, $\forall t^\ast$.
-> > 
-> > Thus $g(t)\leq\frac{t^2}{8}$
+> $$=exp(-tp_i+ln(p_ie^t+(1-p_i)))$$
+> 
+> Look at $g(t)=-tp_i+ln(p_ie^t+(1-p_i))$, for some $t^\ast\in[0,t]$
+> 
+> $$g(t)=g(0)+g'(0)t+g^{\prime\prime}(t^\ast)\frac{t^2}{2}$$ 
+> 
+> We can show $g^{\prime\prime}(t)\leq\frac{1}{4}$, $\forall t^\ast$.
+> 
+> Thus $g(t)\leq\frac{t^2}{8}$
 
 
 
