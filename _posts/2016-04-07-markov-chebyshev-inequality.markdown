@@ -83,8 +83,8 @@ _The following theorem is a **special case** of chernoff bound_
 
 MGF has some important properties:
 
-1. If $M_X(t)$ is defined for `$t\in(-t^*,t^*)$` for some $t^*>0$, then
-    * All the moments of $X$ exist, and `$M_X(t)$` has derivatives of all orders at $t=0$ where `$\forall k, E[X^k]=\frac{\partial^kM}{\partial t^k}|_{t=0}$`
+1. If $M_X(t)$ is defined for \\$t\in(-t^*,t^*)$ for some $t^*>0$, then
+    * All the moments of $X$ exist, and \\$M_X(t)$ has derivatives of all orders at $t=0$ where $\forall k, E[X^k]=\frac{\partial^kM}{\partial t^k}|_{t=0}$
 
 ## Hoeffding's Inequality
 
