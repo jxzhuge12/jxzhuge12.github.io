@@ -23,7 +23,7 @@ There are 5 important inequalities in Machine Learning Theory:
 
 > If $X$ is a nonnegative random variable and $\epsilon>0$. Then
 >
-> $$P[x\geq\epsilon]\leq\frac{E(X)}{\epsilon}$$
+> $$P[X\geq\epsilon]\leq\frac{E(X)}{\epsilon}$$
 
 #### Proof for Markov's Inequality
 
@@ -31,7 +31,7 @@ First of all, we define **indicator function**:
 
 > For an event $A$, let $I(A)$ be the indicator of the event:
 >
-> $$y = \left\{ \begin{array}{ll}
+> $$I(A) = \left\{ \begin{array}{ll}
 1 & \textrm{if $A$ is true}\\
 0 & \textrm{else}
 \end{array} \right.$$
@@ -69,11 +69,22 @@ _The following theorem is a **special case** of chernoff bound_
 >
 > Let
 >
-> $$\bar{x}=\frac{1}{m}\sum_{i=1}^mx_i, p=\frac{1}{m}\sum_{i=1}^mp_i$$
+> $$\bar{X}=\frac{1}{m}\sum_{i=1}^mx_i, p=\frac{1}{m}\sum_{i=1}^mp_i$$
 >
 > We have
 >
-> $$P(|\bar{x}-p|>\epsilon)\leq 2e^{-2\epsilon^2m}$$
+> $$P(|\bar{X}-p|>\epsilon)\leq 2e^{-2\epsilon^2m}$$
+
+#### Moment-Generating Functions (MGFs)
+
+> MGF of a random variable $X$ is defined as
+>
+> $$M_X(t)=E[e^{tX}], t\in\mathbb{R}$$
+
+MGF has some important properties:
+
+1. If $M_X(t)$ is defined for $t\in(-t^*,t^*)$ for some $t^*>0$, then
+    * All the moments of $X$ exist, and $M_X(t)$ has derivatives of all orders at $t=0$ where $\forall k, E[X^k]=\frac{\partial^kM}{\partial t^k}|_{t=0}$
 
 ## Hoeffding's Inequality
 
@@ -83,25 +94,25 @@ _The following theorem is a **special case** of chernoff bound_
 >
 > Let
 >
-> $$\bar{x}=\frac{1}{m}\sum_{i=1}^mx_i$$
+> $$\bar{X}=\frac{1}{m}\sum_{i=1}^mx_i$$
 >
 > For any $\epsilon>0$, we have
 >
-> $$P(|\bar{x}-E[\bar{x}]|>\epsilon)\leq e^{\frac{-2\epsilon^2m^2}{\sum_i(a_i-b_i)^2}}$$
+> $$P(|\bar{X}-E[\bar{X}]|>\epsilon)\leq exp(-\frac{2\epsilon^2m^2}{\sum_i(a_i-b_i)^2})$$
 >
-> $$P(|\bar{x}-E[\bar{x}]|<-\epsilon)\leq e^{\frac{-2\epsilon^2m^2}{\sum_i(a_i-b_i)^2}}$$
+> $$P(|\bar{X}-E[\bar{X}]|<-\epsilon)\leq exp(-\frac{2\epsilon^2m^2}{\sum_i(a_i-b_i)^2})$$
 
 ## McDiarmid's Inequality
 
-> Let $f:\mathbb{R}^m\rightarrow\mathbb{R}$ be such that $\forall i$, and all $x_1, \cdots, x_i, \cdots, x_m, x'_i$
+> Let $f:\mathbb{R}^m\rightarrow\mathbb{R}$ be such that $\forall i$, and all $x_1, \cdots, x_i, \cdots, x_m, X'_i$
 >
-> $$|f(x_1, \cdots, x_i, \cdots, x_m)-f(x_1, \cdots, x'_i, \cdots, x_m)|\leq\Delta_i$$
+> $$|f(x_1, \cdots, x_i, \cdots, x_m)-f(x_1, \cdots, X'_i, \cdots, x_m)|\leq\Delta_i$$
 >
 > Let $x_1, \cdots, x_m$ be independent random variables, then
 >
-> $$P[f(x_1, \cdots, x_m)-E[f(x_1, \cdots, x_m)]>\epsilon]\leq e^{\frac{-2\epsilon^2}{\sum_i\Delta_i^2}}$$
+> $$P[f(x_1, \cdots, x_m)-E[f(x_1, \cdots, x_m)]>\epsilon]\leq exp(-\frac{2\epsilon^2}{\sum_i\Delta_i^2})$$
 >
-> $$P[f(x_1, \cdots, x_m)-E[f(x_1, \cdots, x_m)]<-\epsilon]\leq e^{\frac{-2\epsilon^2}{\sum_i\Delta_i^2}}$$
+> $$P[f(x_1, \cdots, x_m)-E[f(x_1, \cdots, x_m)]<-\epsilon]\leq exp(-\frac{2\epsilon^2}{\sum_i\Delta_i^2})$$
 
 #### Thanks
 
@@ -139,6 +150,13 @@ _The following theorem is a **special case** of chernoff bound_
         <i class="fa fa-wikipedia-w fa-stack-1x fa-inverse"></i>
     </span>
 </a>[Chernoff Bound](https://en.wikipedia.org/wiki/Chernoff_bound)
+
+<a target="_blank" href="https://en.wikipedia.org/wiki/Moment-generating_function">
+    <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-wikipedia-w fa-stack-1x fa-inverse"></i>
+    </span>
+</a>[Moment-Generating Function](https://en.wikipedia.org/wiki/Moment-generating_function)
 
 <a target="_blank" href="https://en.wikipedia.org/wiki/Hoeffding%27s_inequality">
     <span class="fa-stack fa-lg">
