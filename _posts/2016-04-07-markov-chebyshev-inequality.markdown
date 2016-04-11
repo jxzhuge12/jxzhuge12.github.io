@@ -85,6 +85,15 @@ MGF has some important properties:
 
 1. If $M_X(t)$ is defined for $t\in(-t^\ast,t^\ast)$ for some $t^\ast>0$, then
     * All the moments of $X$ exist, and $M_X(t)$ has derivatives of all orders at $t=0$ where $\forall k, E[X^k]=\frac{\partial^kM}{\partial t^k}\vert_{t=0}$
+    * $\forall t\in(-t^\ast,t^\ast)$, $M_X(t)$ has Taylor's expansion $M_X(t)=\sum_k\frac{E[X^k]}{k!}t^k$
+2. If $x$ and $y$ are independent random variables, then the $M_{x+y}(t)=M_x(t)M_y(t)$
+3. For any constants $a$ and $b$, $M_{ax+b}(t)=e^{bt}M_x(at)$
+
+#### Jensen's Inequality
+
+> Let $X$ be a random variable, and $f$ be a convex function. Then 
+>
+> $$f(E[X])\leq E[f(X)]$$
 
 ## Hoeffding's Inequality
 
