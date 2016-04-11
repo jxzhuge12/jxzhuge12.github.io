@@ -124,7 +124,7 @@ $$P(\bar{y}>\epsilon)=P(e^{t\bar{y}}>e^{t\epsilon})\leq\frac{E[e^{t\bar{y}}]}{e^
 > 
 > $$g(t)=g(0)+g'(0)t+g^{\prime\prime}(t^\ast)\frac{t^2}{2}$$ 
 > 
-> We can show $g^{\prime\prime}(t)\leq\frac{1}{4}$ $\forall t^\ast$.
+> We can show that $\forall t^\ast$, we can get $g^{\prime\prime}(t)\leq\frac{1}{4}$.
 > 
 > Thus $g(t)\leq\frac{t^2}{8}$
 
