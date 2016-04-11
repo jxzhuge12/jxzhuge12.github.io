@@ -50,7 +50,7 @@ $$E(X)\geq\epsilon E(I(X\geq\epsilon))=\epsilon P(X\geq\epsilon)$$
 
 From Markov's inequality, we define
 
-`$$Y=\vert X-E(X)\vert^2$$`
+$$Y=\vert X-E(X)\vert^2$$
 
 Then
 
@@ -83,7 +83,7 @@ _The following theorem is a **special case** of chernoff bound_
 
 MGF has some important properties:
 
-1. If $M_X(t)$ is defined for $t\in(-t^*,t^*)$ for some $t^*>0$, then
+1. If $M_X(t)$ is defined for $t\in(-t^\ast,t^\ast)$ for some $t^\ast>0$, then
     * All the moments of $X$ exist, and $M_X(t)$ has derivatives of all orders at $t=0$ where $\forall k, E[X^k]=\frac{\partial^kM}{\partial t^k}\vert_{t=0}$
 
 ## Hoeffding's Inequality
