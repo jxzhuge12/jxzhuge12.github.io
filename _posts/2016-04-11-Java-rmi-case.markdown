@@ -24,9 +24,9 @@ Java RMI 极大地依赖于接口。在需要创建一个远程对象的时候�
 
 本教程分4步：
 
-* [interface 及其实现]({{ page.url }}/#interface)
-* [Server 端]({{ page.url }}/#server)
-* [Client 端]({{ page.url }}/#client)
+* [interface 及其实现]({{ page.url }}/#interface-)
+* [Server 端]({{ page.url }}/#server-)
+* [Client 端]({{ page.url }}/#client-)
 * [运行]({{ page.url }}/#section)
 
 #### interface 及其实现
@@ -52,28 +52,22 @@ import java.rmi.RemoteException;
 
 //File name: CalculatorImpl.java
 public class CalculatorImpl extends java.rmi.server.UnicastRemoteObject implements Calculator {
-    private static final long serialVersionUID = 3434060152387200042L;
-
     public CalculatorImpl() throws RemoteException {
         super();
     }
 
-    @Override
     public int add(int a, int b) throws RemoteException {
         return a + b;
     }
 
-    @Override
     public int sub(int a, int b) throws RemoteException {
         return a - b;
     }
 
-    @Override
     public int mul(int a, int b) throws RemoteException {
         return a * b;
     }
 
-    @Override
     public int div(int a, int b) throws RemoteException {
         return a / b;
     }
@@ -104,7 +98,6 @@ import rmitest.CalculatorImpl;
 public class CalculatorServer {
     public static void main(String[] args) {
         try {
-            LocateRegistry.createRegistry(1098);
             Naming.bind("rmi://localhost:1099/CalculatorServer", new CalculatorImpl());
         } catch (RemoteException e) {
             e.printStackTrace();
