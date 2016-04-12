@@ -34,10 +34,11 @@ Java RMI 极大地依赖于接口。在需要创建一个远程对象的时候�
 ~~~ java
 package rmitest;
 
+import java.rmi.Remote;
 import java.rmi.RemoteException;
 
 //File name: Calculator.java
-public interface Calculator extends java.rmi.Remote {
+public interface Calculator extends Remote {
     int add(int a, int b) throws RemoteException;
     int sub(int a, int b) throws RemoteException;
     int mul(int a, int b) throws RemoteException;
@@ -49,9 +50,10 @@ public interface Calculator extends java.rmi.Remote {
 package rmitest;
 
 import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
 
 //File name: CalculatorImpl.java
-public class CalculatorImpl extends java.rmi.server.UnicastRemoteObject implements Calculator {
+public class CalculatorImpl extends UnicastRemoteObject implements Calculator {
     public CalculatorImpl() throws RemoteException {
         super();
     }
