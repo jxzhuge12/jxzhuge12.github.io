@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "史上最简单的Java RMI教程"
+title:      "史上最简单的 Java RMI 教程"
 date:       2016-4-11 12:00:00
 author:     "jxzhuge12"
 catalog:    true
@@ -10,26 +10,26 @@ tags:
     - Java
 ---
 
-## Java RMI介绍
+## Java RMI 介绍
 
-Java远程方法调用，即Java RMI（Java Remote Method Invocation）是Java编程语言里，一种用于实现远程过程调用的应用程序编程接口。它使客户机上运行的程序可以调用远程服务器上的对象。远程方法调用特性使Java编程人员能够在网络环境中分布操作。RMI全部的宗旨就是尽可能简化远程接口对象的使用。
+Java 远程方法调用，即 **Java RMI (Java Remote Method Invocation)** 是 Java 编程语言里，一种用于实现远程过程调用的应用程序编程接口。它使客户机上运行的程序可以调用远程服务器上的对象。远程方法调用特性使 Java 编程人员能够在网络环境中分布操作。RMI全部的宗旨就是尽可能简化远程接口对象的使用。
 
-Java RMI极大地依赖于接口。在需要创建一个远程对象的时候，程序员通过传递一个接口来隐藏底层的实现细节。客户端得到的远程对象句柄正好与本地的根代码连接，由后者负责透过网络通信。这样一来，程序员只需关心如何通过自己的接口句柄发送消息。
+Java RMI 极大地依赖于接口。在需要创建一个远程对象的时候，程序员通过传递一个接口来隐藏底层的实现细节。客户端得到的远程对象句柄正好与本地的根代码连接，由后者负责透过网络通信。这样一来，程序员只需关心如何通过自己的接口句柄发送消息。
 
 ## Java RMI教程
 
 > 运行环境：Ubuntu 15.10 + Java 8
->
-> 在Desktop目录新建文件夹并命名为rmitest。本教程所有代码都在该文件夹下。但是，所有java指令都在Desktop目录运行。
+
+**在 Desktop 目录新建文件夹并命名为 rmitest。本教程所有代码都在该文件夹下。但是，所有 java 指令都在 Desktop 目录运行。**
 
 本教程分4步：
 
-* interface以及具体实现
-* Server端
-* Client端
-* 运行
+* [interface 及其实现]({{ page.url }}/#interface)
+* [Server 端]({{ page.url }}/#server)
+* [Client 端]({{ page.url }}/#client)
+* [运行]({{ page.url }}/#section)
 
-#### interface以及具体实现
+#### interface 及其实现
 
 ~~~ java
 package rmitest;
@@ -80,14 +80,14 @@ public class CalculatorImpl extends java.rmi.server.UnicastRemoteObject implemen
 }
 ~~~
 
-上述两个文件在rmitest文件夹中保存好后，退出到Desktop目录，运行
+上述两个文件在 **rmitest** 文件夹中保存好后，回到 **Desktop** 目录，运行
 
 ~~~
 javac rmitest/*.java
 rmic rmitest.CalculatorImpl
 ~~~
 
-#### Server端
+#### Server 端
 
 ~~~ java
 package rmitest;
@@ -117,13 +117,13 @@ public class CalculatorServer {
 }
 ~~~
 
-上述文件在rmitest文件夹中保存好后，退出到Desktop目录，运行
+上述文件在 **rmitest** 文件夹中保存好后，回到 **Desktop** 目录，运行
 
 ~~~
 javac rmitest/CalculatorServer.java
 ~~~
 
-#### Client端
+#### Client 端
 
 ~~~ java
 package rmitest;
@@ -155,7 +155,7 @@ public class CalculatorClient {
 }
 ~~~
 
-上述文件在rmitest文件夹中保存好后，退出到Desktop目录，运行
+上述文件在 **rmitest** 文件夹中保存好后，回到 **Desktop** 目录，运行
 
 ~~~
 javac rmitest/CalculatorClient.java
@@ -163,21 +163,21 @@ javac rmitest/CalculatorClient.java
 
 #### 运行
 
-打开三个command，都进入到Desktop目录下。
+打开三个 **Command** ，都进入到 **Desktop** 目录下。
 
-在第一个command中运行
+在第一个 **Command** 中运行
 
 ~~~
 rmiregistry
 ~~~
 
-在第二个command中运行
+在第二个 **Command** 中运行
 
 ~~~
 java rmitest.CalculatorServer
 ~~~
 
-在第三个command中运行
+在第三个 **Command** 中运行
 
 ~~~
 java rmitest.CalculatorClient
@@ -192,11 +192,11 @@ java rmitest.CalculatorClient
         <i class="fa fa-circle fa-stack-2x"></i>
         <i class="fa fa-wikipedia-w fa-stack-1x fa-inverse"></i>
     </span>
-</a>[Java远程方法调用](https://zh.wikipedia.org/wiki/Java%E8%BF%9C%E7%A8%8B%E6%96%B9%E6%B3%95%E8%B0%83%E7%94%A8)
+</a>[Java 远程方法调用](https://zh.wikipedia.org/wiki/Java%E8%BF%9C%E7%A8%8B%E6%96%B9%E6%B3%95%E8%B0%83%E7%94%A8)
 
 <a target="_blank" href="http://www.cnblogs.com/javalouvre/p/3726256.html">
     <span class="fa-stack fa-lg">
         <i class="fa fa-circle fa-stack-2x"></i>
         <i class="fa fa-stack-1x fa-inverse">B</i>
     </span>
-</a>[RMI入门教程](http://www.cnblogs.com/javalouvre/p/3726256.html)
+</a>[RMI 入门教程](http://www.cnblogs.com/javalouvre/p/3726256.html)
