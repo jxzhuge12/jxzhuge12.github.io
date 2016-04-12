@@ -81,6 +81,8 @@ javac rmitest/*.java
 rmic rmitest.CalculatorImpl
 ~~~
 
+> Note: 在编译之前一定不能把 server 和 client 的代码也放到文件夹里！
+
 #### Server 端
 
 ~~~ java
