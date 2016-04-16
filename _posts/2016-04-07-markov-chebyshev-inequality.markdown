@@ -14,8 +14,8 @@ There are 5 important inequalities in Machine Learning Theory:
 * [Markov's Inequality]({{ page.url }}/#markovs-inequality)
 * [Chebyshev's Inequality]({{ page.url }}/#chebyshevs-inequality)
 * [Chernoff-Hoeffding Bound]({{ page.url }}/#chernoff-hoeffding-bound)
-* [Hoeffding's Inequality]({{ page.url }}/hoeffdings-inequality)
-* [McDiarmid's Inequality]({{ page.url }}/mcdiarmids-inequality)
+* [Hoeffding's Inequality]({{ page.url }}/#hoeffdings-inequality)
+* [McDiarmid's Inequality]({{ page.url }}/#mcdiarmids-inequality)
 
 ---
 
