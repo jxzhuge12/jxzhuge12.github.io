@@ -156,15 +156,9 @@ The other direction is the same.
 >
 > For any $\epsilon>0$, we have
 >
-> $$P(\vert\bar{X}-E[\bar{X}]\vert>\epsilon)\leq exp(-\frac{2\epsilon^2m^2}{\sum_i(a_i-b_i)^2})$$
+> $$P(\bar{X}-E[\bar{X}]>\epsilon)\leq exp(-\frac{2\epsilon^2m^2}{\sum_i(a_i-b_i)^2})$$
 >
-> $$P(\vert\bar{X}-E[\bar{X}]\vert<-\epsilon)\leq exp(-\frac{2\epsilon^2m^2}{\sum_i(a_i-b_i)^2})$$
-
-#### Proof for Hoeffding's Inequality
-
-> Lemma 2 (Hoeffding's Lemma): Let $X\in[a,b]$ and $E[X]=0$. Then 
->
-> $$M_X(t)=E[e^{tX}]\leq e^{t^2(b-a)^2/8}$$
+> $$P(\bar{X}-E[\bar{X}]<-\epsilon)\leq exp(-\frac{2\epsilon^2m^2}{\sum_i(a_i-b_i)^2})$$
 
 ## McDiarmid's Inequality
 
