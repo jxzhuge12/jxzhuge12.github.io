@@ -176,7 +176,7 @@ _Note: Hoeffding's inequality is a **special case** of McDiarmid's inequality: j
 
 $$f(x_1, \cdots, x_m)=\sum_ix_i$$
 
-#### Thanks
+## Thanks
 
 <a target="_blank" href="http://zhihu.com/question/27821324/answer/80814695?utm_campaign=webshare&amp;utm_source=weibo&amp;utm_medium=zhihu">
     <span class="fa-stack fa-lg">
