@@ -27,42 +27,59 @@ Java RMI 的简化实现流程如下图所示。
 5. [得到结果并通过 Skeleton 和 Stub 传回 Client]({{ page.url }}/#transfer-result)
 6. [Client 接收结果]({{ page.url }}/#accept-result) 
 
-## Create a new instance
+#### Create a new instance
 
+在 Client 端创建 public abstract class Stub，并且通过 create method 调用以下函数来创造 new Instance。
 
+~~~ java
+java.lang.Object java.lang.reflect.Proxy.newProxyInstance(ClassLoader loader,
+              Class<?>[] interfaces,
+              InvocationHandler h)
+                      throws IllegalArgumentException
+~~~
 
+#### Invoke methods
 
-## Invoke methods
+在通过 newProxyInstance 构造的 new Instance 里，我们需要实现 InvocationHandler class 中的 invoke method 来进行所有 method invocation 的处理。
 
+InvocationHandler 的具体框架如下：
 
+~~~ java
+public class MyInvocationHandler implements InvocationHandler, Serializable
+{
+    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {}
+}
+~~~
 
+我们每次对 Instance 的 method 的调用都会通过 InvocationHandler 的 invoke method 实现。具体的 method 以及参数都存放在 Method method 和 Object\[\] args 中。
 
+然后通过 java.io.ObjectOutputStream，我们就可以对 Server 端传递 method name 和参数 Object\[\] args 了。
 
-## Get parameters
+#### Get parameters
 
+在 Server 端，我们需要设置 Listener thread。每当有 Client 接入时，Listener 线程需要 create new thread 并且通过 java.io.ObjectInputStream 来接收 method name 和 Object\[\] args。
 
+#### Run
 
+通过 method name，我们就可以找到指定的 method 并且通过 Method.invoke 来运行。
 
+~~~ java
+java.lang.Object Method.invoke(Object obj,
+            Object... args)
+              throws IllegalAccessException,
+                     IllegalArgumentException,
+                     InvocationTargetException
+~~~
 
-## Run
+#### Transfer result
 
+在 Server 端通过 java.io.ObjectOutputStream 对结果进行传递。
 
+#### Accept result
 
+在 Client 端通过 java.io.ObjectInputStream 对结果进行接收。
 
-
-## Transfer result
-
-
-
-
-
-## Accept result
-
-
-
-
-
-## Glitches
+#### Glitches
 
 
 
