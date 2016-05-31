@@ -81,16 +81,3 @@ java.lang.Object Method.invoke(Object obj,
 
 #### Glitches
 
-
-
-
-
-
-## 致谢
-
-<a target="_blank" href="https://zh.wikipedia.org/wiki/Java%E8%BF%9C%E7%A8%8B%E6%96%B9%E6%B3%95%E8%B0%83%E7%94%A8">
-    <span class="fa-stack fa-lg">
-        <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fa fa-wikipedia-w fa-stack-1x fa-inverse"></i>
-    </span>
-</a>[Java 远程方法调用](https://zh.wikipedia.org/wiki/Java%E8%BF%9C%E7%A8%8B%E6%96%B9%E6%B3%95%E8%B0%83%E7%94%A8)
