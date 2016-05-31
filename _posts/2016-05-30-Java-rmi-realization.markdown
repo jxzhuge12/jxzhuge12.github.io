@@ -79,5 +79,21 @@ java.lang.Object Method.invoke(Object obj,
 
 在 Client 端通过 java.io.ObjectInputStream 对结果进行接收。
 
-#### Glitches
+## Glitches
 
+在这个 project 中，我们遇到过以下问题：
+
+* [重载函数]({{ page.url }}/#overloaded-function)
+* [equals method 的本地实现]({{ page.url }}/#equals-method-local-realization)
+
+#### overloaded function
+
+在 Client 端传递 method name 和 Object\[\] args 到 Server 端时，由于我们不知道 Object\[\] args 的具体类型，导致可能对 overloaded function 进行选择的时候会出错。
+
+我们通过调用 Method.getParameterTypes() 来获得所有参数类型，并且将 method name 以及所有参数类型拼接成字符串，再将该字符串的 hashcode 传递到 Server 端进行匹配。
+
+#### equals method local realization
+
+由于 equals method 的特殊性，我们在 Client 端直接实现。最初，我们在 InvocationHandler 接收到的 method name 为 equals 的时候就进入 equal 的判断。但是这样带来了别的问题：equals method 被重载过。
+
+所以，我们判断 Object\[\] args 的长度为1，并且参数类型为 java.lang.Object 的时候进入 equal 判断。
